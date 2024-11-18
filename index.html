@@ -375,7 +375,7 @@ document.getElementById("loveIn").onclick = function() {
   strings: ["" + vketik8], startDelay: 1, speed: 70, cursor: true, waitUntilVisible: true, lifelike: true,
   afterComplete: function(){
     pesan8.innerHTML=vketik8;
-    setInterval(berjatuhan,680);
+    setInterval(berjatuhan,100);
   },}).go();
   }
 
@@ -413,10 +413,10 @@ document.getElementById("loveIn").onclick = function() {
 
 function berjatuhan() {
     const heart = document.createElement("div");
-    heart.innerHTML = "<p class='line spin' style='font-size:22px;opacity:.3;z-index:100'>✨</p>";
+    heart.innerHTML = "<p class='line spin' style='font-size:22px;opacity:.2;z-index:100'>💧</p>";
     heart.className = "heart-icon";
-    heart.style.left = (Math.random() * 95) + "vw";
-    heart.style.animationDuration = (Math.random() * 3) + 2 + "s";
+    heart.style.left = (Math.random() * 100) + "vw";
+    heart.style.animationDuration = (Math.random() * 1) + 1 + "s";
     document.body.appendChild(heart);
 }
 
@@ -425,7 +425,7 @@ setInterval(function () {
     if (heartArr.length > 100) {
       heartArr[0].remove();
     }
-}, 300);
+}, 100);
 </script>
 </body>
 </html>
